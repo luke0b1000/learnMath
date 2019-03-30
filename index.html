@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learn Math</title>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <style>
+            .moSpacing {
+                padding-right: 50px;
+                border: solid 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Learn Math</h1>
+
+        <div id="mathOperation">
+            <span class="moSpacing" id="addition">+</span>
+            <span class="moSpacing" id="subtraction">-</span>
+            <span class="moSpacing" id="multiplication">*</span>
+            <span class="moSpacing" id="division">/</span>
+        </div>
+
+        <div id="displayQuestion"></div>
+        <div id="answerBox">
+            <form action="#" method="POST">
+                <input
+                    type="number"
+                    id="inputAnswer"
+                    placeholder="Answer is ..."
+                />
+                <input type="submit" id="submit" value="Submit Answer" />
+            </form>
+        </div>
+
+        <div id="response"></div>
+
+        <br />
+
+        <button id="clearHistory">Clear History</button>
+        <a href="#"></a>
+        <div id="historyContainer">
+            <a href="#" id="toggle">History</a>
+        </div>
+        <ul id="history"></ul>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="learnmath.js"></script>
+    </body>
+</html>
